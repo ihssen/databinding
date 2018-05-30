@@ -10,6 +10,19 @@ export class AppComponent {
 
   isAuth = false;
 
+  appareils = [
+    {
+      name: 'Machine à laver',
+      status: 'éteint'
+    },{
+      name: 'Frigo',
+      status: 'éteint'
+    },{
+      name: 'Ordi',
+      status: 'allumé'
+    }
+  ]
+
   constructor(){
     setTimeout(
       () => {
