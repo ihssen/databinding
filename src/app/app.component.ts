@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  isAuth = false;
+
+  constructor(){
+    setTimeout(
+      () => {
+        this.isAuth = true;
+      },3000
+    );
+  }
+
+  open(){
+    console.log("bonjour");
+  }
 }
